@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 112, 110);
+  padding: 50px;
+}
+
+.body-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  height: 100%;
+  width: 100%;
+  
+  .main-container {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-flow: column nowrap;
+    width: 50vw;
+
+    h1 {
+      font-size: 40px;
+      margin: 20px;
+    }
+
+    .questions {
+      align-items: center;
+      display: flex;
+      margin: 50px;
+      justify-content: center;
+      flex-flow: row wrap;
+      width: 700px;
+    }
+
+    .categoria {
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 5px;
+      font-size: 14px;
+      width: 200px;
+    }
+
+    .pergunta {
+      width: 600px !important;
+    }
+
+    .input-text{
+      border: 1px solid rgba($color: #000000, $alpha: 0.6);
+      border-radius: 8px;
+      padding: 5px;
+      margin: 5px;
+      height: 32px;
+      width: 300px;
+      outline: none;
+
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+
+    .save-button {
+      background-color: #3c7cd7;
+      border: 1px solid black;
+      border-radius: 16px;
+      cursor: pointer;
+      padding: 10px;
+      transition: 1s;
+      font-size: 18px;
+      width: 200px;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .quadro-JSON {
+    align-items: center;
+    background-color: rgb(231, 222, 222);
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    overflow-y: scroll;
+    flex-flow: column nowrap;
+    height: 600px;
+    width: 100%;
+    
+    img {
+      width: 500px;
+    }
+  }
+}
